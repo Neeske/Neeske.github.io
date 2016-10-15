@@ -9,11 +9,14 @@ body {
 
 img {
   max-width: 100%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; /* future proofing */
 }
 
 p {
 	color: black;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Courier', sans-serif;
 }
 
 a {
@@ -46,20 +49,23 @@ figure {
   min-width: 60px;
   float:left;
   margin-right: 0.5em;
+
 }
 .logo h1 {
   float: left;
+
 }
 header {
   position:fixed;
   width: 100%;
-  background-color: #FFEBEE;
+  background-color: rgba(255, 0, 0, 0.2);
 }
 
 
 nav li {
   padding: 2%;
   color:#5E7C8B;
+  cursor: pointer;
 }
 
 /* MAIN SECTION */
@@ -80,6 +86,21 @@ nav li {
   background-color:#FFCDD2;
   padding: 0.8em;
   box-shadow: 5px 5px 5px #888888;
+  border-radius: 10px;
+}
+
+.contact_heading {
+  background-color:#FFCDD2;
+  padding: 0.8em;
+  box-shadow: 5px 5px 5px #888888;
+  border-radius: 10px;
+}
+
+.contact_heading figure {
+ float: left;
+ width: 50%;
+ padding-right: 0.8em;
+
 }
 
 .heading h1 {
@@ -109,6 +130,7 @@ aside {
   background-color: #FFCDD2;
   padding: 0.3em;
   box-shadow: 5px 5px 5px #888888;
+  border-radius: 10px;
 }
 
 aside h3 {
@@ -140,6 +162,7 @@ aside h3 {
 
 .footer {
   background-color: #5E7C8B;
+  opacity: 0.5;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -154,11 +177,11 @@ aside h3 {
   vertical-align: middle;;
 }
 
-.footer p {
+.footer a {
   color: white;
 }
 
-.footer p, .footer img {
+.footer a, .footer img {
   display: inline-block;
 }
 
